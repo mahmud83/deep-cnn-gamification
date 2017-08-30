@@ -26,12 +26,10 @@ To accomplish the above goal, the data consisting the time of gameplay of player
 The mathematical function shall be constructed using _cubic spline interpolation_ since the graph of learning of individuals are usually not _smooth_, or in mathematical context, not differentiable at some points. The cubic spline interpolation produces a piecewise-polynomial function which gives a mathematical function at a specified interval like _[a,b]_ (see [Figure 1](figures/spline.png)). Hence, _smoothening_ the graph of learning (see [Figure 2](figures/spline_1.png)).
 
 ![](figures/spline.png)
-
 Figure 1: A piecewise-polynomial function on intervals _[0,1]_ (_s_0(x)_), _[1, 2]_ (_s_1(x)_), _[2, 3]_ (_s_2(x)_), and _[3, 4]_ (_s_3(x)_).
 
 ![](figures/spline_1.png)
-
-Figure 2: **{Smoothened:** A piecewise-polynomial function on intervals _[0,1]_ (_s_0(x)_), _[1, 2]_ (_s_1(x)_), _[2, 3]_ (_s_2(x)_), and _[3, 4]_ (_s_3(x)_) (graphed using [Desmos Calculator](https://www.desmos.com/calculator)).
+Figure 2: **Smoothened:** A piecewise-polynomial function on intervals _[0,1]_ (_s_0(x)_), _[1, 2]_ (_s_1(x)_), _[2, 3]_ (_s_2(x)_), and _[3, 4]_ (_s_3(x)_) (graphed using [Desmos Calculator](https://www.desmos.com/calculator)).
 
 In the present research, it is proposed to use the _rate of change_ (derivative) of the function from cubic spline interpolation as the _learning rate_ of the CNN. The learning rate in a neural network is crucial for it is the numerical entity which dictates how fast a machine learns a specified task. For the training of the CNN to learn how the human player plays, a close approach to what [Chen & Yi (2017)](https://arxiv.org/abs/1702.05663) did in their study, the gameplay frames (760x760 px images) and the coordinates of the packets and aim of the player shall be used as input. This approach shall be done to all players that will be involved in the study, as [Lewandowsky & Farrell (2011)](https://goo.gl/pp3x7H) pointed out that _individual fitting_ is more advantageous than generalizing.
 
