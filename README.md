@@ -8,7 +8,7 @@ This is a proposal for mathematically determining the learning rate to be used i
 
 ## Citation
 ```
-@article{agarap2017neural,
+@article{agarap2017using,
         title={Using Student Learning Based on Fluency for the Learning Rate in a Deep Convolutional Neural Network for the Gamification of Information Security},
         author={Agarap, Abien Fred},
         journal={ResearchGate: DOI: 10.13140/RG.2.2.36501.73443},
